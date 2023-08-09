@@ -15,7 +15,7 @@
 }
 
 .TopContent{
-    margin-top: 5cm;
+    margin-top: 10em;
 }
 .topTitle{
     font-family: 'Montserrat', sans-serif;
@@ -28,4 +28,44 @@
     font-weight: 600;
     color: #ffffff;
     font-size: 22px;
+}
+
+.ecomerceicon{
+    height: 80px;
+    width: 80px;
+}
+.designicon{
+    height: 80px;
+    width: 80px;
+}
+.webicon{
+    height: 80px;
+    width: 80px;
+}
+.serviceCard{
+    margin: 5px 5px 5px 5px;
+    height: 22rem;
+    padding: 60px 30px 60px 30px;
+    box-shadow:0 0 8px 0 rgb(4, 55, 105, 0.2);
+}
+.serviceCard:hover{
+    margin: 5px 5px 5px 5px;
+    height: 22rem;
+    padding: 60px 30px 60px 30px;
+    box-shadow:0 0 16px 0 rgb(4, 55, 105, 0.2);
+}
+.serviceName{
+    color: #051b35;
+    margin: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.serviceDescription{
+    color: #051b35;
+    margin: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
 }
