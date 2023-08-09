@@ -80,7 +80,20 @@
 .bottom{
     background: #505050 none repeat scroll 0 0;
     height: 3px;
-    width: 85px;
+    width: 100px;
     margin: -1.9rem auto 0;
     margin-bottom: 3rem;
+}
+
+.NavTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff !important;
+    font-size: 30px;
+}
+.NavTitleScroll{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #051b35 !important;
+    font-size: 30px;
 }
