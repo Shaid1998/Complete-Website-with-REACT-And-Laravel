@@ -6,3 +6,26 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.topBannerOverLay{
+    position: absolute;
+    min-height: 550px;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+.TopContent{
+    margin-top: 5cm;
+}
+.topTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 48px;
+}
+.topShbTitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+}
