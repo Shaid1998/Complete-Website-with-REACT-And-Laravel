@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 
-export class Analysis extends Component {
+class Analysis extends Component {
   constructor(){
     super();
 
