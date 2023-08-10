@@ -144,6 +144,7 @@
     min-height: 400px;
     width: 100%;
     background: rgb(27, 31, 92, 0.7);
+    
 }
 
 .countNumber{
@@ -154,7 +155,7 @@
 }
 
 .countTitle{
-    color: #ffd900;
+    color: #f6ee11;
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 600;
@@ -179,4 +180,13 @@
     margin-top: 25%;
     padding: 10px 10px 10px 10px;
     border-radius: 3px;
+    
+}
+.iconBullent{
+    color: #051b35;
+    font-size: 16px;
+}
+.iconProject{
+    color:#0fce2c;
+    font-size: 100px;
 }
