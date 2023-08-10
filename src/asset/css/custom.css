@@ -98,6 +98,34 @@
     font-size: 30px;
 }
 .iconImage{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 80px;
+}
+.navBackground{
+    -webkit-transition: background-color 440ms linear;
+    -moz-transition: background-color 440ms linear;
+    -o-transition: background-color 440ms linear;
+    transition: background-color 440ms linear;
+    background-color: rgba(00, 00, 00, 0.0) !important;
+}
+.navBackgroundScroll{
+    -webkit-transition: background-color 440ms linear;
+    -moz-transition: background-color 440ms linear;
+    -o-transition: background-color 440ms linear;
+    transition: background-color 440ms linear;
+    background-color: #ffffff;
+}
+.navItem{
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff !important;
+    font-weight: 400;
+    font-size: 16px;
+}
+.navItemScroll{
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000 !important;
+    font-weight: 400;
+    font-size: 16px;
 }
