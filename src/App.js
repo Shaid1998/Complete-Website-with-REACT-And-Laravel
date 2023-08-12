@@ -5,6 +5,7 @@ import TopNavigation from './components/TopNavigation/TopNavigation.jsx';
 import Analysis from './components/Analysis/Analysis.jsx';
 import Summary from './components/Summary/Summary.jsx';
 import Projects from './components/Projects/Projects.jsx';
+import Videos from './components/Video/Videos.jsx';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Analysis />
       <Summary />
       <Projects />
+      <Videos />
     </div>
   );
 }

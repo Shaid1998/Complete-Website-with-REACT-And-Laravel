@@ -2,10 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component, Fragment } from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
-import {faCheckSquare} from '@fortawesome/free-solid-svg-icons'
-import {faGlobe} from '@fortawesome/free-solid-svg-icons'
-import {faLaptop} from '@fortawesome/free-solid-svg-icons'
-import {faStar} from '@fortawesome/free-solid-svg-icons'
+import {faGlobe, faCheckSquare, faLaptop, faStar} from '@fortawesome/free-solid-svg-icons'
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 
