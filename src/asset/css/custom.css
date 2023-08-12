@@ -190,3 +190,17 @@
     color:#0fce2c;
     font-size: 100px;
 }
+.projectCard{
+    background: #ffffff;
+    height: 100em;
+    width: 22em;
+    border-radius: 0.6em;
+    margin: 1em;
+    cursor: pointer;
+    box-shadow: 0 13px 25px -px;
+    transition: all ease 2000ms;
+}
+.projectCard:hover{
+    transform: scale(1.03);
+    box-shadow: 0 13px 30px -px;
+}
