@@ -7,6 +7,7 @@ import Summary from './components/Summary/Summary.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Videos from './components/Video/Videos.jsx';
 import ClientReview from './components/Review/ClientReview.jsx';
+import AboutMe from './components/AboutMe/AboutMe.jsx';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Projects />
       <Videos />
       <ClientReview />
+      <AboutMe />
     </div>
   );
 }
