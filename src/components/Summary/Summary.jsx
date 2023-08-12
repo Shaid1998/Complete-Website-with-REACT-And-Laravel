@@ -6,6 +6,8 @@ import {faCheckSquare} from '@fortawesome/free-solid-svg-icons'
 import {faGlobe} from '@fortawesome/free-solid-svg-icons'
 import {faLaptop} from '@fortawesome/free-solid-svg-icons'
 import {faStar} from '@fortawesome/free-solid-svg-icons'
+import CountUp from 'react-countup'
+import VisibilitySensor from 'react-visibility-sensor'
 
 class Summary extends Component {
     render() {
@@ -18,24 +20,63 @@ class Summary extends Component {
                                 <Col lg={8} md={6} sm={12}>
                                     <Row className="countSection">
                                         <Col  lg={4} md={6} sm={12}>
-                                            <FontAwesomeIcon className='iconProject' icon={faGlobe}/>
-                                            <h1 className='countNumber'>15+</h1>
-                                            <h4 className='countTitle'>Projects Completed At All Resent Past</h4>
-                                            <hr className='bg-white w-25'/>   
+                                            <Card className="workCard" >
+                                                <Card.Body>
+                                                    <FontAwesomeIcon className='iconProject' icon={faGlobe}/>
+                                                    <h1 className='countNumber'>
+                                                        <CountUp start={0} end={15}>
+                                                            {({countUpRef, start})=>(
+                                                                <VisibilitySensor onChange={start} delayedCall>
+                                                                    <span ref={countUpRef} />
+                                                                </VisibilitySensor>
+                                                            )}
+                                                        </CountUp>
+                                                        +
+                                                    </h1>
+                                                    <h4 className='countTitle'>Projects Completed At All Resent Past</h4>
+                                                    <hr className='bg-black w-25'/>   
+                                                </Card.Body>
+                                            </Card>
                                         </Col>
 
                                         <Col  lg={4} md={6} sm={12}>
-                                            <FontAwesomeIcon className='iconProject' icon={faLaptop}/>
-                                            <h1 className='countNumber'>50+</h1>
-                                            <h4 className='countTitle'>Course Completed From University and Online</h4>
-                                            <hr className='bg-white w-25'/>
+                                            <Card className="workCard" >
+                                                <Card.Body>
+                                                    <FontAwesomeIcon className='iconProject' icon={faLaptop}/>
+                                                    <h1 className='countNumber'>
+                                                        <CountUp start={0} end={50}>
+                                                            {({countUpRef, start})=>(
+                                                                <VisibilitySensor onChange={start} delayedCall>
+                                                                    <span ref={countUpRef} />
+                                                                </VisibilitySensor>
+                                                            )}
+                                                        </CountUp>
+                                                        +
+                                                    </h1>
+                                                    <h4 className='countTitle'>Course Completed From University and Online</h4>
+                                                    <hr className='bg-black w-25'/>
+                                                </Card.Body>
+                                            </Card>
                                         </Col>
 
                                         <Col  lg={4} md={6} sm={12}>
-                                            <FontAwesomeIcon className='iconProject' icon={faStar}/>
-                                            <h1 className='countNumber'>8+</h1>
-                                            <h4 className='countTitle'>Hours Daily Spending on Development</h4>
-                                            <hr className="bg-white w-25" />
+                                            <Card className="workCard" >
+                                                <Card.Body>
+                                                    <FontAwesomeIcon className='iconProject' icon={faStar}/>
+                                                    <h1 className='countNumber'>
+                                                        <CountUp start={0} end={15}>
+                                                            {({countUpRef, start})=>(
+                                                                <VisibilitySensor onChange={start} delayedCall>
+                                                                    <span ref={countUpRef} />
+                                                                </VisibilitySensor>
+                                                            )}
+                                                        </CountUp>
+                                                        +
+                                                    </h1>
+                                                    <h4 className='countTitle'>Hours Daily Spending on Development</h4>
+                                                    <hr className="bg-black w-25" />
+                                                </Card.Body>
+                                            </Card>
                                         </Col>
                                     </Row>
                                 </Col>
