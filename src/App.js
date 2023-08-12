@@ -6,6 +6,7 @@ import Analysis from './components/Analysis/Analysis.jsx';
 import Summary from './components/Summary/Summary.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Videos from './components/Video/Videos.jsx';
+import ClientReview from './components/Review/ClientReview.jsx';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Summary />
       <Projects />
       <Videos />
+      <ClientReview />
     </div>
   );
 }
