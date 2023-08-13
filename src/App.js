@@ -1,5 +1,6 @@
 import React from 'react';
-import HomePage from './pages/HomePage';
+import Project from './pages/Project';
+
 
 
 
@@ -9,7 +10,7 @@ import HomePage from './pages/HomePage';
 function App() {
   return (
     <div>
-      <HomePage />
+      <Project />
     </div>
   );
 }
