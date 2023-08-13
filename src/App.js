@@ -1,5 +1,6 @@
 import React from 'react';
-import Project from './pages/Project';
+import AllServices from './pages/AllServices';
+
 
 
 
@@ -10,7 +11,7 @@ import Project from './pages/Project';
 function App() {
   return (
     <div>
-      <Project />
+      <AllServices />
     </div>
   );
 }
