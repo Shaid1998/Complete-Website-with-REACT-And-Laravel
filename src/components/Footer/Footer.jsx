@@ -1,4 +1,5 @@
 import { faFacebook, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -18,16 +19,21 @@ class Footer extends Component {
                         </div>
                     </Col>
 
-                    <Col lg={3} md={6} sm={12}>
+                    <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
                         <h1 className='footerName'>Contact Us</h1>
+                        <p className='mail' ><FontAwesomeIcon icon={faEnvelope} /> Email: shaidurrahman225@gmail.com </p>
+                        <p className='mail' ><FontAwesomeIcon icon={faPhone} /> Phone: +8801928466221 </p>
                     </Col>
 
-                    <Col lg={3} md={6} sm={12}>
+                    <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
                         <h1 className='footerName'>Information</h1>
+                        <a className='footerLink' href='#'>About Me</a> <br></br>
+                        <a className='footerLink' href='#'>Portfolio</a>
                     </Col>
 
-                    <Col lg={3} md={6} sm={12}>
+                    <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
                         <h1 className='footerName'>Address</h1> 
+                        <h4 className='footerLink'>Dhaka, Bangladesh</h4>
                     </Col>
                 </Row>
             </Container>

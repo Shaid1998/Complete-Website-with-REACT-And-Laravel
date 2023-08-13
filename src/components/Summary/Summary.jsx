@@ -16,7 +16,7 @@ class Summary extends Component {
                             <Row>
                                 <Col lg={8} md={6} sm={12}>
                                     <Row className="countSection">
-                                        <Col  lg={4} md={6} sm={12}>
+                                        <Col  lg={4} md={6} sm={12} className=' text-center'>
                                             <Card className="workCard" >
                                                 <Card.Body>
                                                     <FontAwesomeIcon className='iconProject' icon={faGlobe}/>
@@ -36,7 +36,7 @@ class Summary extends Component {
                                             </Card>
                                         </Col>
 
-                                        <Col  lg={4} md={6} sm={12}>
+                                        <Col  lg={4} md={6} sm={12} className=' text-center'>
                                             <Card className="workCard" >
                                                 <Card.Body>
                                                     <FontAwesomeIcon className='iconProject' icon={faLaptop}/>
@@ -56,7 +56,7 @@ class Summary extends Component {
                                             </Card>
                                         </Col>
 
-                                        <Col  lg={4} md={6} sm={12}>
+                                        <Col  lg={4} md={6} sm={12} className=' text-center'>
                                             <Card className="workCard" >
                                                 <Card.Body>
                                                     <FontAwesomeIcon className='iconProject' icon={faStar}/>
@@ -77,7 +77,7 @@ class Summary extends Component {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col lg={4} md={6} sm={12}>
+                                <Col lg={4} md={6} sm={12} className=' text-center'>
                                     <Card className="workCard" >
                                         <Card.Body>
                                             <Card.Title className="cardTitle">What I Have Achieved</Card.Title>
