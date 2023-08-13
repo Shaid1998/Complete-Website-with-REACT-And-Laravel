@@ -148,14 +148,14 @@
 }
 
 .countNumber{
-    color: #130ff2;
+    color: #09e01b;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 40px;
 }
 
 .countTitle{
-    color: #09e01b;
+    color: #ffd900;
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 600;
@@ -177,7 +177,7 @@
     font-size: 14px;
 }
 .workCard{
-    margin-top: 25%;
+    
     padding: 10px 10px 10px 10px;
     border-radius: 3px;
     
@@ -187,7 +187,7 @@
     font-size: 16px;
 }
 .iconProject{
-    color:#0fce2c;
+    color:#ffffff;
     font-size: 100px;
 }
 .projectCard{
