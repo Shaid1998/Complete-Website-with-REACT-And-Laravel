@@ -351,3 +351,28 @@ p.mail:hover{
 .copyrightsection:hover{
     color: #ffd900;  
 }
+.topFixedPage{
+    background-image: url("../image/page.png");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topPageOverLay{
+    position: absolute;
+    min-height: 250px;
+    width: 100%;
+    background: rgb(19, 1, 102, 0.7);
+}
+
+.TopContentPage{
+    margin-top: 8em;
+}
+.topPageTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffee00;
+    font-size: 40px;
+}
