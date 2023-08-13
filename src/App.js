@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects.jsx';
 import Videos from './components/Video/Videos.jsx';
 import ClientReview from './components/Review/ClientReview.jsx';
 import AboutMe from './components/AboutMe/AboutMe.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Videos />
       <ClientReview />
       <AboutMe />
+      <Footer />
     </div>
   );
 }

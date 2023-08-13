@@ -283,3 +283,36 @@
     font-size: 28px;
     font-weight: 600;
 }
+.footerSection{
+    margin-top: 5rem;
+    box-shadow: 0 0 8px 0;
+    background-color: #051b35;
+}
+.footerName{
+    color: #ffffff;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.socialContent{
+    margin: 30px;
+}
+a.social{
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+a.social:hover{
+    color: #130ff2;
+    transform: translateY(-2px);
+}
+a.facebook{
+    color: #ffffff;
+}
+a.instagram{
+    color: #ffffff;
+}
+a.github{
+    color: #ffffff;
+}
