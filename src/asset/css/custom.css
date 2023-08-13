@@ -304,7 +304,7 @@ a.social{
     display: inline-block;
 }
 a.social:hover{
-    color: #130ff2;
+    color: #ffd900;
     transform: translateY(-2px);
 }
 a.facebook{
@@ -323,6 +323,11 @@ p.mail{
     font-size: 15px;
     font-weight: 600;
 }
+p.mail:hover{
+    color: #ffd900;
+    margin-top: 1rem;
+    
+}
 .footerLink{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -334,4 +339,15 @@ p.mail{
     text-decoration: none;
     
     color: #ffd900;
+}
+.copyrightsection{
+    color: #130ff2;
+    padding: 20px 20px 20px 20px;
+    background-color: #002c61;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.copyrightsection:hover{
+    color: #ffd900;  
 }

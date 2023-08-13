@@ -37,6 +37,9 @@ class Footer extends Component {
                     </Col>
                 </Row>
             </Container>
+            <Container fluid={true} className='text-center copyrightsection'>
+                <a>@copyright 2023 by Md. Shaidur Rahman, All Rights Reserved!</a>
+            </Container>
         </Fragment>
     )
   }
