@@ -8,14 +8,15 @@ import {NavLink } from 'react-router-dom'
 import {Link} from 'react-router'
 
 class TopNavigation extends Component {
-    constructor(){
+    constructor(props){
         super();
         this.state={
              navBarTitle:"NavTitle",
              navBarLogo: [WhiteLogo],
              navVariant:'dark',
              navBarBack: "navBackground",
-             navBarItem:"navItem"
+             navBarItem:"navItem",
+             pageTitle: props.title
         }
    }
 
@@ -36,6 +37,7 @@ class TopNavigation extends Component {
   render() {
     return (
       <Fragment>
+        <title>{this.state.pageTitle}</title>
         <Navbar className={this.state.navBarBack } collapseOnSelect fixed='top' expand="lg" variant={this.state.navVariant}>
             <Container>
                 <Navbar.Brand className={this.state.navBarTitle}  href="#home"><img className='iconImage' src={this.state.navBarLogo}/></Navbar.Brand>

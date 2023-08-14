@@ -9,7 +9,7 @@ class AllServices extends Component {
   render() {
     return (
       <Fragment>
-        <TopNavigation />
+        <TopNavigation title='services'/>
         <PageTop pagetitle='MY SERVICES' />
         <ContactSection />
         <Footer />

@@ -8,7 +8,7 @@ class Project extends Component {
   render() {
     return (
       <Fragment>
-        <TopNavigation />
+        <TopNavigation title='project'/>
         <PageTop pagetitle='Resent Projects'/>
         <AllProject />
         <Footer />

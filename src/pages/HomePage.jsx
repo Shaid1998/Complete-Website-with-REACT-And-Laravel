@@ -14,7 +14,7 @@ class HomePage extends Component {
   render() {
     return (
       <Fragment>
-        <TopNavigation />
+        <TopNavigation title='home'/>
         <TopBanner />
         <Services />
         <Analysis />
