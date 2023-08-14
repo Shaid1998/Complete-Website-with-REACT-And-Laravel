@@ -51,7 +51,7 @@ class Summary extends Component {
                                         <Col  lg={4} md={6} sm={12} className=' text-center'>
                                             <FontAwesomeIcon className='iconProject' icon={faStar}/>
                                             <h1 className='countNumber'>
-                                                <CountUp start={0} end={15}>
+                                                <CountUp start={0} end={7551}>
                                                     {({countUpRef, start})=>(
                                                         <VisibilitySensor onChange={start} delayedCall>
                                                             <span ref={countUpRef} />
@@ -60,7 +60,7 @@ class Summary extends Component {
                                                 </CountUp>
                                                 +
                                             </h1>
-                                            <h4 className='countTitle'>Hours Daily Spending on Development</h4>
+                                            <h4 className='countTitle'>Hours Spending on Development</h4>
                                             <hr className="bg-black w-25" />
                                         </Col>
                                     </Row>
