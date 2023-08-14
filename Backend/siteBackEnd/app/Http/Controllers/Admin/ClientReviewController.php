@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Chart;
+use App\Models\ClientReview;
 
-class ChartController extends Controller
+class ClientReviewController extends Controller
 {
-    public function onAllSelect(){
-        $result = Chart::all();
+    public function reviewAll(){
+        $result = ClientReview::all();
         return $result;
     }//End Method
 }
