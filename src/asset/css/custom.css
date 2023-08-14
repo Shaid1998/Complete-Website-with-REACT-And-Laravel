@@ -376,3 +376,65 @@ p.mail:hover{
     color: #ffee00;
     font-size: 40px;
 }
+/*welcome */
+.intro-area-top{
+    margin-top: -70px;
+    position: relative;
+    z-index: 2;
+}
+.section-title{
+    margin-bottom: 45px;
+    position: relative;
+}
+.section-title .sub-title{
+    font-weight: 500;
+    position : relative;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.section-title .sub-title.double-line ::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    height: 3px;
+    width: 40px;
+    background: #051b35;
+}
+.section-title .sub-title.double-line ::after{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    height: 3px;
+    width: 40px;
+    background: #051b35;
+}
+.intro-area-inner-2{
+    box-shadow: 0 0 30px rgb(0 0 0 / 7%);
+    background: #fff;
+    padding: 50px 0 0;
+    border-radius: 8px;
+}
+.maintitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #051b35;
+    font-size: 40px;
+}
+.intro-footer {
+    padding: 30px 30px 10px;
+    border-radius: 0 0 7px 7px;
+}
+.bg-base {
+    background: #fdc800;
+}
+.sideImg{
+     margin-top: -15px;
+}
+.homeIntro{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    color: #051b35;
+    font-size: 16px;
+}

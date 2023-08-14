@@ -3,6 +3,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import {BrowserRouter as Router, Routes, Switch, Route, Link } from 'react-router-dom'
 
 class Footer extends Component {
   render() {
@@ -13,9 +14,9 @@ class Footer extends Component {
                     <Col lg={3} md={6} sm={12} className='p-5 text-center'>
                         <h1 className='footerName'>Follow Us</h1>
                         <div className='socialContent'>
-                            <a className='facebook social' href='#'><FontAwesomeIcon icon={faFacebook} size='2x' /> </a>
-                            <a className='instagram social' href='#'><FontAwesomeIcon icon={faInstagram} size='2x' /></a>
-                            <a className='github social' href='#'><FontAwesomeIcon icon={faGithub} size='2x' /></a>
+                            <a className='facebook social' href='https://www.facebook.com/ShaidurRahman1998/'><FontAwesomeIcon icon={faFacebook} size='2x' /> </a>
+                            <a className='instagram social' href='https://www.instagram.com/whoshaid'><FontAwesomeIcon icon={faInstagram} size='2x' /></a>
+                            <a className='github social' href='https://github.com/Shaid1998'><FontAwesomeIcon icon={faGithub} size='2x' /></a>
                         </div>
                     </Col>
 
@@ -27,8 +28,8 @@ class Footer extends Component {
 
                     <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
                         <h1 className='footerName'>Information</h1>
-                        <a className='footerLink' href='#'>About Me</a> <br></br>
-                        <a className='footerLink' href='#'>Portfolio</a>
+                        <Link className='footerLink' to='/about'>About Me</Link> <br></br>
+                        <Link className='footerLink' to='/portfolio'>Portfolio</Link>
                     </Col>
 
                     <Col lg={3} md={6} sm={12} className='p-5 text-justify'>

@@ -9,6 +9,7 @@ import Videos from '../components/Video/Videos.jsx';
 import ClientReview from '../components/Review/ClientReview.jsx';
 import AboutMe from '../components/AboutMe/AboutMe.jsx';
 import Footer from '../components/Footer/Footer.jsx';
+import Welcome from '../components/Welcome/Welcome.jsx';
 
 class HomePage extends Component {
   render() {
@@ -16,6 +17,7 @@ class HomePage extends Component {
       <Fragment>
         <TopNavigation title='home'/>
         <TopBanner />
+        <Welcome />
         <Services />
         <Analysis />
         <Summary />
