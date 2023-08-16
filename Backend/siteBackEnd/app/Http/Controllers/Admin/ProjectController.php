@@ -21,4 +21,5 @@ class ProjectController extends Controller
         $result = project::where('id',$id)->get();
         return $result;
     }//End Method
+    
 }

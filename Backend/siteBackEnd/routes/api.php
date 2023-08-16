@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\ChartController;
 use App\Http\Controllers\Admin\ClientReviewController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\FooterController;
+use App\Http\Controllers\Admin\InformationController;
 
 
 
@@ -22,3 +24,18 @@ Route::post('/contactsent', [ContactController::class,'sendContact']);
 Route::get('/projectview', [ProjectController::class,'Projectview']);
 Route::get('/projectselview', [ProjectController::class,'ProjectviewOne']);
 Route::get('/projectdetails', [ProjectController::class,'onSelectProject']);
+
+//Footer Route
+Route::get('/footerview', [FooterController::class,'footerAll']);
+
+//Information Route
+Route::get('/informationview', [InformationController::class,'informationAll']);
+
+//Service Route
+Route::get('/serviceview', [ServiceController::class,'serviceAll']);
+
+//Home Etc Route
+Route::get('/home/video', [HomeEtcController::class,'HomeVideo']);
+Route::get('/totalhome', [HomeEtcController::class,'TotalHome']);
+Route::get('/techhome', [HomeEtcController::class,'SelectTecHome']);
+Route::get('/home/title', [HomeEtcController::class,'SelectHomeTitle']);
