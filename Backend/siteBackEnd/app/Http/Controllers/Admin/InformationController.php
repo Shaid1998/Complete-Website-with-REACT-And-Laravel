@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Models\information;
+use App\Models\Information;
 
 class InformationController extends Controller
 {
-    public function informationAll(){
-        $result = information::all();
+    public function onAllSelect(){
+        $result =Information::all();
         return $result;
     }//End Method
 }

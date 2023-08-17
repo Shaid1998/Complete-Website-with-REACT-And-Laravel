@@ -8,6 +8,8 @@ use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\FooterController;
 use App\Http\Controllers\Admin\InformationController;
+use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\HomeEtcController;
 
 
 
@@ -29,10 +31,10 @@ Route::get('/projectdetails', [ProjectController::class,'onSelectProject']);
 Route::get('/footerview', [FooterController::class,'footerAll']);
 
 //Information Route
-Route::get('/informationview', [InformationController::class,'informationAll']);
+Route::get('/informationdata', [InformationController::class,'onAllSelect']);
 
 //Service Route
-Route::get('/serviceview', [ServiceController::class,'serviceAll']);
+Route::get('/service', [ServiceController::class,'onAllSelect']);
 
 //Home Etc Route
 Route::get('/home/video', [HomeEtcController::class,'HomeVideo']);

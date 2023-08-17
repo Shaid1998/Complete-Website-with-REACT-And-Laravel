@@ -8,8 +8,8 @@ use App\Models\Services;
 
 class ServiceController extends Controller
 {
-    public function serviceAll(){
-        $result = Services::latest()->get();
+    public function onAllSelect(){
+        $result = Services::all();
         return $result;
     }//End Method
 }
