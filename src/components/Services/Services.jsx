@@ -5,36 +5,39 @@ import ecomerceicon from '../../asset/image/ecommerce.png'
 import webicon from '../../asset/image/web.png'
 import '../../asset/css/custom.css'
 import '../../asset/css/bootstrap.min.css'
+import RestClient from '../../RestAPI/RestClient.js'
+import AppURL from '../../RestAPI/AppURL.js'
 
 class Services extends Component {
+  constructor(){
+    super();
+    this.state={
+      serviceData:[]
+    }
+  }
+  componentDidMount(){
+    RestClient.GetRequest(AppURL.Services).then(result=>{
+      this.setState({serviceData:result});
+    })
+  }
   render() {
+    const MyList = this.state.serviceData;
+    const MyView = MyList.map(MyList=>{
+      return <Col lg={4} md={6} sm={12}>
+                <div className='serviceCard text-center'>
+                  <img className='ecomerceicon' src={MyList.service_logo} />
+                  <h1 className='serviceName'>{MyList.service_name}</h1>
+                  <p className='serviceDescription'>{MyList.service_description}</p>
+                </div>
+              </Col >
+    })
     return (
       <Fragment>
         <Container className='text-center'>
             <h1 className='ServiceMainTitle'>MY SERVICES</h1>
             <div className='bottom'></div>
             <Row>
-                <Col lg={4} md={6} sm={12}>
-                    <div className='serviceCard text-center'>
-                        <img className='ecomerceicon' src={ecomerceicon} />
-                        <h1 className='serviceName'>Ecommerce</h1>
-                        <p className='serviceDescription'>I will design and develop ecommerce online store website. </p>
-                    </div>
-                </Col >
-                <Col lg={4} md={6} sm={12}>
-                    <div className='serviceCard text-center'>
-                        <img className='designicon' src={designicon} />
-                        <h1 className='serviceName'>Web Development</h1>
-                        <p className='serviceDescription'>Clean and fresh issue free code to make your website dynamic perfectly. </p>
-                    </div>
-                </Col>
-                <Col lg={4} md={6} sm={12}>
-                    <div className='serviceCard text-center'>
-                        <img className='webicon' src={webicon} />
-                        <h1 className='serviceName'>Web Design</h1>
-                        <p className='serviceDescription'>Qualified Web Design and Attractive effects which catches visitor's Eye. </p>
-                    </div>
-                </Col>
+                {MyView}
             </Row>
         </Container>
       </Fragment>
