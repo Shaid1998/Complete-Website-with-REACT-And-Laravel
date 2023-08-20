@@ -11,8 +11,8 @@ class AppURL {
   static Information = this.BaseURL+'/informationdata';
   static Footer = this.BaseURL+'/footerview';
   static ProjectDetails = this.BaseURL+'/projectdetails';
-  static ProjectSelectedView = this.BaseURL+'/projectselview';
-  static ProjectView = this.BaseURL+'/projectview';
+  static ProjectAll = this.BaseURL+'/projectall';
+  static ProjectHome = this.BaseURL+'/projectehome';
   static Contact = this.BaseURL+'/contactsent';
   static ClientReview = this.BaseURL+'/clientreview';
   static Chart = this.BaseURL+'/chartdata';

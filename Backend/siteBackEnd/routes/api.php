@@ -23,9 +23,9 @@ Route::get('/clientreview', [ClientReviewController::class,'reviewAll']);
 //contact form route
 Route::post('/contactsent', [ContactController::class,'sendContact']);
 //Project Router
-Route::get('/projectview', [ProjectController::class,'Projectview']);
-Route::get('/projectselview', [ProjectController::class,'ProjectviewOne']);
-Route::get('/projectdetails', [ProjectController::class,'onSelectProject']);
+Route::get('/projectehome', [ProjectController::class,'OnSelectTheree']);
+Route::get('/projectall', [ProjectController::class,'OnSelectAll']);
+Route::post('/projectdetails', [ProjectController::class,'onSelectProject']);
 
 //Footer Route
 Route::get('/footerview', [FooterController::class,'footerAll']);

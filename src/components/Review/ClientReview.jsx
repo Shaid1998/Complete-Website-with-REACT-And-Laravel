@@ -3,9 +3,24 @@ import { Col, Container, Row } from 'react-bootstrap'
 import "slick-carousel/slick/slick.css" 
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
+import RestClient from '../../RestAPI/RestClient.js'
+import AppURL from '../../RestAPI/AppURL.js'
 
 class ClientReview extends Component {
-  render() {
+  constructor(){
+      super();
+      this.state={
+        reviewData:[]
+      }
+    }
+    componentDidMount(){
+      RestClient.GetRequest(AppURL.ClientReview).then(result=>{
+        this.setState({reviewData:result});
+      }).catch(error=>{
+        this.setState({title:'???',subtitle:'???'})
+      })
+    }
+    render() {
     var settings = {
         autoPlaySpeed:3000,
         autoPlay: true,
@@ -45,57 +60,28 @@ class ClientReview extends Component {
           }
         ]
     };
+
+    const MyList = this.state.reviewData;
+        const MyView = MyList.map(MyList=>{
+          return <div>
+                    <Row className='text-center justify-content-center'>
+                      <Col lg={6} md={6} sm={12}>
+                          <img className='circleImg' src={MyList.Client_img} />
+                          <h1 className='ReviewName'>{MyList.Client_title}</h1>
+                          <p className='ReviewDescription'>{MyList.Client_description}</p>
+                      </Col>
+                    </Row>
+                  </div>
+
+        })
+    
     return (
       <Fragment>
         <Container fluid={true} className='text-center sideBack'>
             <h1 className='clientReviewTitle'>TESTIMONIAL</h1>
             <div className='bottom1'></div>
             <Slider {...settings}>
-                <div>
-                    <Row className='text-center justify-content-center'>
-                        <Col lg={6} md={6} sm={12}>
-                            <img className='circleImg' src='https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19636.jpg?w=996&t=st=1691840550~exp=1691841150~hmac=7fd050fe963d2ec27ec51c1f363cb2b30191790e69f3a4f7a1871430ee0530fe' />
-                            <h1 className='ReviewName'>Md. Shaidur Rahman</h1>
-                            <p className='ReviewDescription'>As a recent graduate with a Bachelor of Science in Software Engineering from Daffodil International University, I possess a strong foundation in programming languages, including PHP, JavaScript, and SQL. Although I may be an entry-level candidate, I am confident that my skills and enthusiasm make me an excellent candidate for this position. </p>
-                        </Col>
-                    </Row>
-                </div>
-                <div>
-                    <Row className='text-center justify-content-center'>
-                        <Col lg={6} md={6} sm={12}>
-                            <img className='circleImg' src='https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19636.jpg?w=996&t=st=1691840550~exp=1691841150~hmac=7fd050fe963d2ec27ec51c1f363cb2b30191790e69f3a4f7a1871430ee0530fe' />
-                            <h1 className='ReviewName'>Md. Shaidur Rahman</h1>
-                            <p className='ReviewDescription'>As a recent graduate with a Bachelor of Science in Software Engineering from Daffodil International University, I possess a strong foundation in programming languages, including PHP, JavaScript, and SQL. Although I may be an entry-level candidate, I am confident that my skills and enthusiasm make me an excellent candidate for this position. </p>
-                        </Col>
-                    </Row>
-                </div>
-                <div>
-                    <Row className='text-center justify-content-center'>
-                        <Col lg={6} md={6} sm={12}>
-                            <img className='circleImg' src='https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19636.jpg?w=996&t=st=1691840550~exp=1691841150~hmac=7fd050fe963d2ec27ec51c1f363cb2b30191790e69f3a4f7a1871430ee0530fe' />
-                            <h1 className='ReviewName'>Md. Shaidur Rahman</h1>
-                            <p className='ReviewDescription'>As a recent graduate with a Bachelor of Science in Software Engineering from Daffodil International University, I possess a strong foundation in programming languages, including PHP, JavaScript, and SQL. Although I may be an entry-level candidate, I am confident that my skills and enthusiasm make me an excellent candidate for this position. </p>
-                        </Col>
-                    </Row>
-                </div>
-                <div>
-                    <Row className='text-center justify-content-center'>
-                        <Col lg={6} md={6} sm={12}>
-                            <img className='circleImg' src='https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19636.jpg?w=996&t=st=1691840550~exp=1691841150~hmac=7fd050fe963d2ec27ec51c1f363cb2b30191790e69f3a4f7a1871430ee0530fe' />
-                            <h1 className='ReviewName'>Md. Shaidur Rahman</h1>
-                            <p className='ReviewDescription'>As a recent graduate with a Bachelor of Science in Software Engineering from Daffodil International University, I possess a strong foundation in programming languages, including PHP, JavaScript, and SQL. Although I may be an entry-level candidate, I am confident that my skills and enthusiasm make me an excellent candidate for this position. </p>
-                        </Col>
-                    </Row>
-                </div>
-                <div>
-                    <Row className='text-center justify-content-center'>
-                        <Col lg={6} md={6} sm={12}>
-                            <img className='circleImg' src='https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19636.jpg?w=996&t=st=1691840550~exp=1691841150~hmac=7fd050fe963d2ec27ec51c1f363cb2b30191790e69f3a4f7a1871430ee0530fe' />
-                            <h1 className='ReviewName'>Md. Shaidur Rahman</h1>
-                            <p className='ReviewDescription'>As a recent graduate with a Bachelor of Science in Software Engineering from Daffodil International University, I possess a strong foundation in programming languages, including PHP, JavaScript, and SQL. Although I may be an entry-level candidate, I am confident that my skills and enthusiasm make me an excellent candidate for this position. </p>
-                        </Col>
-                    </Row>
-                </div>
+                {MyView}
             </Slider>
         </Container>
       </Fragment>

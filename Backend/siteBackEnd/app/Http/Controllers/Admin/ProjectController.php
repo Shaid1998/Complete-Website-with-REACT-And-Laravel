@@ -8,12 +8,12 @@ use App\Models\project;
 
 class ProjectController extends Controller
 {
-    public function Projectview(){
+    public function OnSelectAll(){
         $result = project::all();
         return $result;
     }//End Method
-    public function ProjectviewOne(){
-        $result = project::limit(1)->get();
+    public function OnSelectTheree(){
+        $result = project::limit(3)->get();
         return $result;
     }//End Method
     public function onSelectProject(Request $request){

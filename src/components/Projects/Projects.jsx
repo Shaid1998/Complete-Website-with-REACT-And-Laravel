@@ -11,8 +11,10 @@ export class Projects extends Component {
         }
       }
       componentDidMount(){
-        RestClient.GetRequest(AppURL.ProjectDetails).then(result=>{
+        RestClient.GetRequest(AppURL.ProjectHome).then(result=>{
           this.setState({projectData:result});
+        }).catch(error=>{
+          this.setState({title:'???',subtitle:'???'})
         })
       }
       
@@ -21,15 +23,13 @@ export class Projects extends Component {
     const MyList = this.state.projectData;
         const MyView = MyList.map(MyList=>{
           return <Col lg={4} md={6} sm={12}>
-                    <Card className='projectCard'>
-                        <Card.Img variant="top" src={MyList.small_image} />
-                        <Card.Body>
-                            <Card.Title className='serviceName'>{MyList.short_title}</Card.Title>
-                            <Card.Text className='serviceDescription'>{MyList.short_description}</Card.Text>
-                            <Button variant="primary">More</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                    <div className='serviceCard text-center'>
+                      <img className='ecomerceicon' src={MyList.small_image} />
+                      <h1 className='serviceName'>{MyList.short_title}</h1>
+                      <p className='serviceDescription'>{MyList.short_description}</p>
+                      <Button className='button button-primary'>More</Button>
+                    </div>
+                  </Col >
         })
     return (
       <Fragment> 
@@ -37,7 +37,7 @@ export class Projects extends Component {
             <h1 className='ServiceMainTitle'>Projects</h1>
             <div className='bottom'></div>
             <Row>
-                {MyView}
+              {MyView}
             </Row>
         </Container>
       </Fragment>
